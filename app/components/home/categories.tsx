@@ -28,6 +28,7 @@ const CategoriesSection = ({categories}: TCategoriesProps) => {
         </div>
        <div className="grid grid-cols-6 gap-12 mt-8 ">
         {categories.map((category) => (
+            
         <div 
         className="rounded-lg bg-gradient-to-r from-[#F1F1F1] to-[#F7F7F7] w-full aspect-square flex flex-col items-center justify-center"
         key={category._id}
