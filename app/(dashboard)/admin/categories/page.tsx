@@ -12,7 +12,7 @@ import { toast } from "react-toastify";
 import DeleteModal from "../../components/ui/delete-modal";
 
 const CategoryManagement = () => {
-    const [isModelOpen, setIsModalOpen] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
      const [selectedCategory, setSelectedCategory] = useState<Category | null>(null);
      const [categories, setCategories] = useState<Category[]>([]);
 
@@ -82,7 +82,7 @@ const CategoryManagement = () => {
         <CategorysModal
         category={selectedCategory} 
         onSuccess={fetchCategories} 
-        isOpen={isModelOpen} 
+        isOpen={isModalOpen} 
         onClose={handleCloseModal}
         />
        <DeleteModal isOpen={isDeleteModalOpen}
