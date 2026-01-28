@@ -26,7 +26,7 @@ const CategoryManagement = () => {
             Add Category 
             </Button>
         </div>
-        <ProductTable />
+       <ProductTable products={[]} />
         <ProductModal isOpen={isOpen} onClose={handleCloseModal}/>
         </div>
     );
